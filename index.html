@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVÉLLE — Цветочный магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">LAVÉLLE<span>.</span></a>
+
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#catalog">Каталог</a>
+        </nav>
+
+        <a href="#catalog" class="header-button">Выбрать букет</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">ЦВЕТЫ С ЛЮБОВЬЮ</p>
+                <h1>Дарите чувства,<br>а не просто цветы</h1>
+                <p class="hero-description">
+                    Создаём нежные букеты, которые говорят
+                    о самом важном без слов.
+                </p>
+                <a href="#catalog" class="main-button">Смотреть букеты →</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85" alt="Нежный букет цветов">
+            </div>
+        </section>
+
+       <section class="catalog" id="catalog">
+
+    <div class="section-heading">
+        <p class="eyebrow">LAVÉLLE FLOWER COLLECTION</p>
+        <h2>Цветы, созданные дарить эмоции</h2>
+        <p>Выберите букет, который расскажет о ваших чувствах.</p>
+    </div>
+
+    <div class="filters">
+        <button class="filter active" data-category="all">Все букеты</button>
+        <button class="filter" data-category="roses">Розы</button>
+        <button class="filter" data-category="peonies">Пионы</button>
+        <button class="filter" data-category="mix">Авторские букеты</button>
+    </div>
+
+    <div class="products" id="products">
+
+        <!-- 1 -->
+        <article class="product-card" data-category="roses">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=90"
+                    alt="Нежный букет розовых цветов"
+                    loading="lazy">
+                <span class="product-label">Бестселлер</span>
+            </div>
+            <div class="product-info">
+                <h3>Pink Dream</h3>
+                <p class="product-description">
+                    Воздушная композиция в нежно-розовых оттенках.
+                    Для признаний, особенных встреч и тёплых моментов.
+                </p>
+                <div class="product-bottom">
+                    <span class="price">12 000 ₸</span>
+                    <button class="order-button"
+                        data-name="Pink Dream"
+                        data-price="12 000 ₸">
+                        Заказать ↗
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="product-card" data-category="peonies">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=90"
+                    alt="Пышные нежные пионы"
+                    loading="lazy">
+                <span class="product-label">Новинка</span>
+            </div>
+            <div class="product-info">
+                <h3>Peony Love</h3>
+                <p class="product-description">
+                    Роскошные пионы с объёмными лепестками.
+                    Идеальный выбор для тех, кто любит нежность.
+                </p>
+                <div class="product-bottom">
+                    <span class="price">18 000 ₸</span>
+                    <button class="order-button"
+                        data-name="Peony Love"
+                        data-price="18 000 ₸">
+                        Заказать ↗
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="product-card" data-category="roses">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?auto=format&fit=crop&w=900&q=90"
+                    alt="Элегантная композиция из белых роз"
+                    loading="lazy">
+            </div>
+            <div class="product-info">
+                <h3>White Elegance</h3>
+                <p class="product-description">
+                    Белоснежные цветы, символизирующие искренность,
+                    чистоту и особенную красоту.
+                </p>
+                <div class="product-bottom">
+                    <span class="price">15 000 ₸</span>
+                    <button class="order-button"
+                        data-name="White Elegance"
+                        data-price="15 000 ₸">
+                        Заказать ↗
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- 4 -->
+         <article class="product-card" data-category="mix">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=900&q=90"
+                    alt="Авторский букет из разноцветных цветов"
+                    loading="lazy">
+                <span class="product-label">Особенный выбор</span>
+            </div>
+            <div class="product-info">
+                <h3>Summer Mood</h3>
+                <p class="product-description">
+                    Яркое сочетание сезонных цветов.
+                    Немного солнца, радости и летнего настроения.
+                </p>
+                <div class="product-bottom">
+                    <span class="price">14 500 ₸</span>
+                    <button class="order-button"
+                        data-name="Summer Mood"
+                        data-price="14 500 ₸">
+                        Заказать ↗
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="product-card" data-category="roses">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=90"
+                    alt="Романтичные розовые розы"
+                    loading="lazy">
+            </div>
+            <div class="product-info">
+                <h3>Rose Romance</h3>
+                <p class="product-description">
+                    Классические розовые розы для романтических
+                    поводов и красивых признаний.
+                </p>
+                <div class="product-bottom">
+                    <span class="price">16 000 ₸</span>
+                    <button class="order-button"
+                        data-name="Rose Romance"
+                        data-price="16 000 ₸">
+                        Заказать ↗
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="product-card" data-category="mix">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=900&q=90"
+                    alt="Нежная цветочная композиция"
+                    loading="lazy">
+                <span class="product-label">Новинка</span>
+            </div>
+            <div class="product-info">
+                <h3>Sweet Morning</h3>
+                <p class="product-description">
+                    Утончённая цветочная композиция в мягких оттенках.
+                    Для подарка без особого повода.
+                </p>
+                <div class="product-bottom">
+                    <span class="price">13 500 ₸</span>
+                    <button class="order-button"
+                        data-name="Sweet Morning"
+                        data-price="13 500 ₸">
+                        Заказать ↗
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="catalog-note">
+        <p>Каждый букет собирается с любовью и вниманием к деталям.</p>
+        <span>LAVÉLLE — flowers with love</span>
+    </div>
+
+</section>
+
+        <section class="about">
+            <p class="eyebrow">LAVÉLLE FLOWERS</p>
+            <h2>Красота в каждом лепестке</h2>
+            <p>
+                Мы верим, что цветы способны сделать обычный день
+                особенным. Выбирайте любимые букеты и дарите эмоции.
+            </p>
+            <a href="#catalog" class="main-button">Найти свой букет →</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="logo">LAVÉLLE<span>.</span></a>
+        <p>Цветы, которые говорят за вас.</p>
+        <p class="copyright">© 2026 LAVÉLLE. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
